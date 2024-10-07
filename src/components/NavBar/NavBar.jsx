@@ -9,7 +9,7 @@ const NavBar = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       className="flex justify-center cursor-pointer"
-    >
+    > 
       <motion.nav
         whileHover={{ scale: 1.02 }}
         transition={{duration: 1}}
@@ -25,13 +25,13 @@ const NavBar = () => {
         </div>
         <div className="NavOptins  w-full flex ">
           <ul className="text-2xl w-full flex gap-8 text-white items-center">
-            <li className="hover:underline">
-              <Link to="/Chat ">Try</Link>
+            <li className="hover:underline hover:bg-[#01a77d] p-2 rounded-lg transition-all ease-out duration-75">
+              <Link to="/Chat ">Try Chatgpt</Link>
             </li>
-            <li className="hover:underline">
-              <Link to="/ImageAi ">ImageAI</Link>
+            <li className="hover:underline hover:bg-[#01a77d] p-2 rounded-lg transition-all ease-out duration-75">
+              <Link to="/ImageAi ">ImageGen</Link>
             </li>
-            <li className="hover:underline">
+            <li className="hover:underline hover:bg-[#01a77d] hover:p-2 p-2 rounded-lg transition-all ease-out duration-75">
               <Link to="/Purchase ">Purchase</Link>
             </li>
           </ul>

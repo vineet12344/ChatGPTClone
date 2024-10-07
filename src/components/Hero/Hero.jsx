@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 
 const Hero = () => {
+    const navigate = useNavigate();
+
   return (
     <>
       <motion.div
@@ -37,6 +41,11 @@ const Hero = () => {
               versatile tool for both casual conversation and complex
               problem-solving.
             </p>
+            <button onClick={() => {
+              navigate('/Chat');
+            }} className=" text-white text-xl flex gap-3  border-none p-4 rounded-3xl bg-[#01a77d] outline-none font-bold mt-3">
+              Try ChatGPT <FaArrowUpRightFromSquare/>
+            </button>
           </div>
         </motion.div>
 
@@ -47,8 +56,8 @@ const Hero = () => {
           transition={{
             duration: 2, // Time for one full cycle (up and down)
             repeat: Infinity, // Loop infinitely
-            ease: 'easeInOut',
-            repeatType: 'loop', // Repeats the floating loop
+            ease: "easeInOut",
+            repeatType: "loop", // Repeats the floating loop
           }}
           className="shadow-lg"
         >
